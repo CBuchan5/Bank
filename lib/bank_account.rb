@@ -1,22 +1,22 @@
 class BankAccount
   
-  attr_reader :start_balance
+  attr_reader :balance
 
   def initialize 
 
-    @start_balance = 0
+    @balance = 0
 
   end
 
   def deposit(amount) 
  
-   return  @start_balance = @start_balance + amount.to_f
+   return  @balance += amount.to_f
 
   end
 
   def withdraw(amount)
     
-    @start_balance -= amount.to_f
+    @balance -= amount.to_f
  
   end
 end
