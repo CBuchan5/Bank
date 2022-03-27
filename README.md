@@ -38,10 +38,6 @@ So I know when I did what,
 I want to be able to see the date I made a transaction.
 
 As a client,
-So I know how much I have in my account,
-I want to see a total after every transaction. 
-
-As a client,
 So I can keep trck of what I've done and when,
 I want to see my bank statment printed. 
 ```
