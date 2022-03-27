@@ -19,6 +19,13 @@ describe Bank_Account do
       expect{subject.withdraw 5}. to change{subject.balance}.by -5
     end 
   end
+
+  describe 'date' do
+  it 'shows the date a transaction was completed' do 
+    account = Bank_Account.new
+    expect(subject.date(14/01/2023)).to eq ('14/01/2023')
+  end
+end
 end
 
 

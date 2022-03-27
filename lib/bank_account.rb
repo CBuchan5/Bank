@@ -21,6 +21,7 @@ class Bank_Account
   end
 
   def date(current_date)
-    Date.now
+    current_date = Time.new
+    current_date.strftime("%d/%m/%Y")  
   end 
 end
