@@ -1,4 +1,4 @@
-class BankAccount
+class Bank_Account
   
   attr_reader :balance
 
@@ -19,4 +19,8 @@ class BankAccount
     @balance -= amount.to_f
  
   end
+
+  def date(current_date)
+    Date.now
+  end 
 end
