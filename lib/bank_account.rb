@@ -17,7 +17,6 @@ class BankAccount
   def withdraw(amount)
     
     @start_balance -= amount
-   # add deposit first
-   # then withdraw
+ 
   end
 end

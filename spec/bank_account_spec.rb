@@ -19,10 +19,7 @@ describe BankAccount do
       expect{subject.withdraw 5}. to change{subject.start_balance}.by -5
     end 
   end
-  # As a client,
-  # So that I can access my money,
-  # I want to be able to withdraw it.
-
+ 
 end
 
 
