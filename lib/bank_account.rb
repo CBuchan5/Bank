@@ -10,13 +10,13 @@ class BankAccount
 
   def deposit(amount) 
  
-   return  @start_balance = @start_balance + amount
+   return  @start_balance = @start_balance + amount.to_f
 
   end
 
   def withdraw(amount)
     
-    @start_balance -= amount
+    @start_balance -= amount.to_f
  
   end
 end

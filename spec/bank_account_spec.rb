@@ -9,7 +9,7 @@ describe BankAccount do
   
     it 'allows the customer to top up with a deposit' do 
       account = BankAccount.new
-      expect{subject.deposit 10}.to change{subject.start_balance}.by 10
+      expect{subject.deposit 10.10}.to change{subject.start_balance}.by 10.10
     end
  
   describe 'withdraw' do 
@@ -20,6 +20,10 @@ describe BankAccount do
     end 
   end
  
+  # As a client,
+  # So I know when I did what,
+  # I want to be able to see the date I made a transaction.
+
 end
 
 
