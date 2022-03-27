@@ -41,3 +41,6 @@ As a client,
 So I can keep trck of what I've done and when,
 I want to see my bank statment printed. 
 ```
+## Domain Moddles
+
+![](public/images/Inputs_and_Outputs.png)
