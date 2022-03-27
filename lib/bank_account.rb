@@ -10,8 +10,9 @@ class BankAccount
 
   def deposit(amount) 
  
-    10
+   return  @start_balance = @start_balance + amount
 
+   p @start_balance
   end
 
 

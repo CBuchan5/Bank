@@ -9,10 +9,10 @@ describe BankAccount do
   
   it 'allows the customer to top up with a deposit' do 
     account = BankAccount.new
-    expect(account.deposit(10)).to eq 10
+    expect{subject.deposit 10}.to change{subject.start_balance}.by 10
   end
  
-  
+
 end
 
 # Create the deposit - done
