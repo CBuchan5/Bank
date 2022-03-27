@@ -12,8 +12,12 @@ class BankAccount
  
    return  @start_balance = @start_balance + amount
 
-   p @start_balance
   end
 
-
+  def withdraw(amount)
+    
+    @start_balance -= amount
+   # add deposit first
+   # then withdraw
+  end
 end

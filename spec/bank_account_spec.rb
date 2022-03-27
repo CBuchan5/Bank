@@ -2,22 +2,27 @@ require './lib/bank_account.rb'
 
 describe BankAccount do
   describe 'deposit'
-  it 'starts the customer with an account balence of 0' do
-    account = BankAccount.new
-    expect(account.start_balance).to eq 0
-  end
+    it 'starts the customer with an account balence of 0' do
+      account = BankAccount.new
+      expect(account.start_balance).to eq 0
+    end
   
-  it 'allows the customer to top up with a deposit' do 
-    account = BankAccount.new
-    expect{subject.deposit 10}.to change{subject.start_balance}.by 10
-  end
+    it 'allows the customer to top up with a deposit' do 
+      account = BankAccount.new
+      expect{subject.deposit 10}.to change{subject.start_balance}.by 10
+    end
  
+  describe 'withdraw' do 
+    it 'allows the customer to withdraw from their account' do 
+      account = BankAccount.new
+      account.deposit(10)
+      expect{subject.withdraw 5}. to change{subject.start_balance}.by -5
+    end 
+  end
+  # As a client,
+  # So that I can access my money,
+  # I want to be able to withdraw it.
 
 end
 
-# Create the deposit - done
-# Make the deposit defult to 0
-# then focus on top up
-# allow the deposit amout to top_up
-#
-#
+
