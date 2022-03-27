@@ -7,11 +7,12 @@ describe BankAccount do
     expect(account.start_balance).to eq 0
   end
   
-  # it 'allows the customer to top up with a deposit' do 
-  #   account = BankAccount.new
-  #   expect(account.deposit).to eq 5
-  # end
-
+  it 'allows the customer to top up with a deposit' do 
+    account = BankAccount.new
+    expect(account.deposit(10)).to eq 10
+  end
+ 
+  
 end
 
 # Create the deposit - done
