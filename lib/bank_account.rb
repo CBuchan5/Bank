@@ -1,6 +1,6 @@
 class Bank_Account
   
-  attr_reader :balance, :statement
+  attr_reader :balance, :statement, :deposit, :withdraw
 
   def initialize
 
@@ -11,25 +11,30 @@ class Bank_Account
 
   def deposit(credit) 
     
-     @balance += credit.to_f
+     @balance += credit.round(2)
      @statement << Time.new.strftime("%d/%m/%Y") 
      @statement << credit
   end
 
   def withdraw(debit) 
     
-    @balance -= debit.to_f
+    @balance -= debit.round(2)
     @statement << Time.new.strftime("%d/%m/%Y")
     @statement << debit
   end
 
-  def date(current_date)
-    current_date = Time.new.strftime("%d/%m/%Y") 
-    @statement << current_date
-  end 
+  def total
+    self.deposit(20)
+    self.withdraw(5)
+    @balance 
+    
+  end
 
   def show_statement
-  puts @statement
+    @statement << @balance.round(2) 
+    puts @statement
+    
+  # 
   end
 
 end
