@@ -23,18 +23,18 @@ describe Bank_Account do
   describe 'date' do
     it 'shows the date a transaction was completed' do 
       account = Bank_Account.new
-      expect(subject.date(28/03/2022)).to eq ('28/03/2022')
+      expect(subject.date(28/03/2022)).to eq (['28/03/2022'])
     end
   end
 
-  describe 'print' do 
-    it 'start with an empty list' do 
-      expect(subject.show_statement([])).to eq []
-    end
+  # describe 'show_statement' do 
+    # it 'start with an empty list' do 
+    #   expect(subject.show_statement([])).to eq []
+    # end
     # it 'shows a statment of all transactions' do 
     #   expect(subject.show_statement(['28/03/2022', 200, '28/03/2022', 100, 100])).to eq ['28/03/2022', 200, '28/03/2022', 100, 100]
     # end
-  end
+  # end
 end
 
 

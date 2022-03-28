@@ -1,32 +1,35 @@
 class Bank_Account
   
-  attr_reader :balance
+  attr_reader :balance, :statement
 
-  def initialize 
+  def initialize
 
     @balance = 0
-
-  end
-
-  def deposit(amount) 
- 
-   return  @balance += amount.to_f
-
-  end
-
-  def withdraw(amount)
+    @statement = []
     
-    @balance -= amount.to_f
- 
+  end
+
+  def deposit(credit) 
+    
+     @balance += credit.to_f
+     @statement << Time.new.strftime("%d/%m/%Y") 
+     @statement << credit
+  end
+
+  def withdraw(debit) 
+    
+    @balance -= debit.to_f
+    @statement << Time.new.strftime("%d/%m/%Y")
+    @statement << debit
   end
 
   def date(current_date)
-    current_date = Time.new
-    current_date.strftime("%d/%m/%Y")  
+    current_date = Time.new.strftime("%d/%m/%Y") 
+    @statement << current_date
   end 
 
-  def show_statement(statement)
-    statement = []
-    statement.push
+  def show_statement
+  puts @statement
   end
+
 end
