@@ -21,11 +21,20 @@ describe Bank_Account do
   end
 
   describe 'date' do
-  it 'shows the date a transaction was completed' do 
-    account = Bank_Account.new
-    expect(subject.date(28/03/2022)).to eq ('28/03/2022')
+    it 'shows the date a transaction was completed' do 
+      account = Bank_Account.new
+      expect(subject.date(28/03/2022)).to eq ('28/03/2022')
+    end
+  end
+
+  describe 'print' do 
+    it 'shows a statment of all transactions' do 
+      expect(subject.statment)
+    end
   end
 end
-end
 
 
+# As a client,
+# So I can keep trck of what I've done and when,
+# I want to see my bank statment printed.
