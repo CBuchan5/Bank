@@ -24,8 +24,7 @@ class Bank_Account
   end
 
   def total
-    self.deposit(20)
-    self.withdraw(5)
+   
     @balance
     
   end
@@ -33,8 +32,7 @@ class Bank_Account
   def show_statement
     @statement << @balance.round(2) 
     puts @statement
-    
-  # 
+  
   end
 
 end
