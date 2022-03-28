@@ -23,7 +23,7 @@ describe Bank_Account do
   describe 'date' do
   it 'shows the date a transaction was completed' do 
     account = Bank_Account.new
-    expect(subject.date(14/01/2023)).to eq ('14/01/2023')
+    expect(subject.date(28/03/2022)).to eq ('28/03/2022')
   end
 end
 end
