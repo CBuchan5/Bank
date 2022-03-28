@@ -1,5 +1,7 @@
 require './lib/bank_account.rb'
 
+account = Bank_Account.new
+
 describe Bank_Account do
   describe 'deposit'
     it 'starts the customer with an account balence of 0' do

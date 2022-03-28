@@ -26,7 +26,7 @@ class Bank_Account
   def total
     self.deposit(20)
     self.withdraw(5)
-    @balance 
+    @balance
     
   end
 
