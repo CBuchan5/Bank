@@ -44,3 +44,15 @@ I want to see my bank statment printed.
 ## Domain Moddles
 
 ![](public/images/Inputs_and_Outputs.png)
+
+## Setting the program up
+ 
+ Fork and then clone this repositry
+ install any gems by running the following code: 
+ ```
+ bundle 
+```
+## To use the program
+ - Make sure gems are installs (follow steps above)
+ - Open irb
+ - Call the file 
