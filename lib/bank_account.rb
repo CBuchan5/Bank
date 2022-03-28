@@ -24,4 +24,9 @@ class Bank_Account
     current_date = Time.new
     current_date.strftime("%d/%m/%Y")  
   end 
+
+  def show_statement(statement)
+    statement = []
+    statement.push
+  end
 end

@@ -28,9 +28,12 @@ describe Bank_Account do
   end
 
   describe 'print' do 
-    it 'shows a statment of all transactions' do 
-      expect(subject.statment)
+    it 'start with an empty list' do 
+      expect(subject.show_statement([])).to eq []
     end
+    # it 'shows a statment of all transactions' do 
+    #   expect(subject.show_statement(['28/03/2022', 200, '28/03/2022', 100, 100])).to eq ['28/03/2022', 200, '28/03/2022', 100, 100]
+    # end
   end
 end
 
